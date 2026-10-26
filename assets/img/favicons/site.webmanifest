@@ -1,0 +1,11 @@
+{
+  "name": "M3n0tkn0w",
+  "short_name": "M3n0tkn0w",
+  "icons": [
+    { "src": "/assets/img/favicons/web-app-manifest-192x192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/assets/img/favicons/web-app-manifest-512x512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ],
+  "theme_color": "#7c3aed",
+  "background_color": "#17131f",
+  "display": "standalone"
+}

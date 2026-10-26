@@ -12,42 +12,217 @@
 {%- endif -%}
 ';
 
-/* ----------------------------------------------------------------------
-   Custom violet accent (overrides theme CSS variables for light & dark)
-   ---------------------------------------------------------------------- */
+/* ======================================================================
+   M3n0tkn0w — "Glitch" theme
+   Violet accent, Chakra Petch for display type, a static RGB-split on the
+   site name. Rose appears only in that split. Flat surfaces, solid colors.
+   Colors are set through Chirpy's own CSS variables for light & dark, then
+   a few components are restyled through those tokens.
+   ====================================================================== */
 
-@mixin violet-light {
+@mixin glitch-light {
   --link-color: #7c3aed;
+  --accent-2: #db2777;
+  --glitch-v: rgb(124 58 237 / 55%);
+  --glitch-r: rgb(219 39 119 / 50%);
+
+  --site-title-color: #1f1a2b;
+  --sidebar-bg: #f7f5fb;
+  --sidebar-border-color: #ebe6f3;
   --sidebar-active-color: #7c3aed;
-  --sidebar-hover-bg: rgb(124 58 237 / 10%);
+  --sidebar-hover-bg: rgb(124 58 237 / 8%);
+
+  --card-shadow: 0 0 0 1px #e9e4f2;
+  --categories-border: #e9e4f2;
+  --categories-hover-bg: rgb(124 58 237 / 8%);
+
+  --tag-border: #e4ddf1;
+  --tag-shadow: transparent;
+  --tag-hover: rgb(124 58 237 / 10%);
+
+  --timeline-node-bg: #c4b5fd;
+  --highlighter-rouge-color: #6d28d9;
+  --inline-code-bg: rgb(124 58 237 / 7%);
+
   --btn-share-hover-color: #7c3aed;
-  --tag-hover: rgb(124 58 237 / 15%);
-  --categories-hover-bg: rgb(124 58 237 / 12%);
   --checkbox-checked-color: #7c3aed;
 }
 
-@mixin violet-dark {
+@mixin glitch-dark {
   --link-color: #a78bfa;
+  --accent-2: #f472b6;
+  --glitch-v: rgb(167 139 250 / 60%);
+  --glitch-r: rgb(244 114 182 / 55%);
+
+  --site-title-color: #ece8f5;
+  --sidebar-bg: #17141e;
+  --sidebar-border-color: #262130;
   --sidebar-active-color: #c4b5fd;
-  --sidebar-hover-bg: rgb(124 58 237 / 22%);
+  --sidebar-hover-bg: rgb(167 139 250 / 12%);
+
+  --card-shadow: 0 0 0 1px #2b2638;
+  --categories-border: #2b2638;
+  --categories-hover-bg: rgb(167 139 250 / 12%);
+
+  --tag-border: #352d47;
+  --tag-shadow: transparent;
+  --tag-hover: rgb(167 139 250 / 16%);
+
+  --timeline-node-bg: #6d5aa8;
+  --highlighter-rouge-color: #c4b5fd;
+  --inline-code-bg: rgb(167 139 250 / 12%);
+
   --btn-share-hover-color: #a78bfa;
-  --tag-hover: rgb(124 58 237 / 28%);
-  --categories-hover-bg: rgb(124 58 237 / 24%);
   --checkbox-checked-color: #a78bfa;
 }
 
-:root[data-mode='light'] {
-  @include violet-light;
+/* Same selectors the theme uses: the resolved mode lives in $theme-attr
+   (data-bs-theme in Chirpy 7); the media query only covers the moment
+   before the theme's script sets it. */
+$mode-attr: variables.$theme-attr;
+
+:root[#{$mode-attr}='light'] {
+  @include glitch-light;
 }
 
-:root[data-mode='dark'] {
-  @include violet-dark;
+:root[#{$mode-attr}='dark'] {
+  @include glitch-dark;
 }
 
-:root:not([data-mode]) {
-  @include violet-light;
+:root:not([#{$mode-attr}]) {
+  @include glitch-light;
 
   @media (prefers-color-scheme: dark) {
-    @include violet-dark;
+    @include glitch-dark;
   }
+}
+
+/* ---- Display typeface: every title on every page ----------------------- */
+
+:root {
+  --ff-display: 'Chakra Petch', Lato, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.site-title,
+.site-subtitle,
+#sidebar .nav-link span,
+h1,
+h2,
+h3,
+h4,
+h5,
+.card-wrapper .card-title,
+#archives .year,
+.categories .card-header a,
+.table-wrapper thead th {
+  font-family: var(--ff-display);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: 0.005em;
+}
+
+/* ---- Sidebar ----------------------------------------------------------- */
+
+.site-title {
+  font-weight: 700;
+  text-shadow:
+    1.5px 0 0 var(--glitch-v),
+    -1.5px 0 0 var(--glitch-r);
+}
+
+.site-subtitle {
+  font-style: normal !important;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+#sidebar #avatar,
+#sidebar #avatar img {
+  border-radius: 14px !important;
+}
+
+#sidebar .nav-link span {
+  font-weight: 600;
+}
+
+#sidebar .nav .nav-item.active .nav-link {
+  background-color: #7c3aed;
+  color: #fff;
+}
+
+#sidebar .nav .nav-item.active .nav-link i {
+  opacity: 1;
+  color: #fff;
+}
+
+/* ---- Home: post cards are flat, with a solid accent edge -------------- */
+
+.card-wrapper.card {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-wrapper.card::before {
+  content: '';
+  position: absolute;
+  inset-block: 0;
+  inset-inline-start: 0;
+  width: 3px;
+  background: var(--link-color);
+  z-index: 1;
+}
+
+.card-wrapper .card-title {
+  font-weight: 600;
+}
+
+/* ---- Post page: tags as outlined chips --------------------------------- */
+
+.post-tags .post-tag {
+  border: 1px solid var(--tag-border);
+  background: transparent;
+}
+
+.post-tags .post-tag:hover {
+  color: var(--link-color);
+  border-color: var(--link-color);
+}
+
+/* ---- Events table ------------------------------------------------------ */
+
+.table-wrapper thead th {
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  border-bottom: 2px solid var(--link-color);
+}
+
+/* The events log fits the column instead of scrolling sideways:
+   cells may wrap and padding is tighter than the theme default. */
+.events-log .table-wrapper > table {
+  width: 100%;
+  min-width: 0;
+}
+
+.events-log .table-wrapper th,
+.events-log .table-wrapper td {
+  white-space: normal;
+  padding: 0.45rem 0.6rem;
+  vertical-align: top;
+}
+
+.events-log .table-wrapper td:nth-child(4),
+.events-log .table-wrapper td:nth-child(5),
+.events-log .table-wrapper td:nth-child(6) {
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---- Archives ---------------------------------------------------------- */
+
+#archives .year {
+  font-weight: 700;
 }
