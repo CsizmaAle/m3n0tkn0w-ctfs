@@ -1,3 +1,11 @@
+
+---
+title: "RSTCON 2026 – Leaky Logger"
+date: 2026-10-25 20:00:00 +0200
+categories: [CTF, RSTCON 2026]
+tags: [binary-exploitation, format-string, info-leak, printf, stack-leak, ghidra, python]
+---
+
 ## **Challenge Information**
 **Title:**  Leaky Logger  
 **Category**:  Binary exploitation  
