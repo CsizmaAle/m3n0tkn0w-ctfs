@@ -1,7 +1,7 @@
 ---
 title: "UVT CTF – Sanity Check — Shifting Winds"
 date: 2026-03-19 08:00:00 +0200
-categories: [CTF, UVT CTF]
+categories: [Platform, UVT CTF]
 tags: [caesar-cipher, rot, substitution-cipher, dcode, archive-extraction]
 media_subpath: /assets/img/posts/
 ---

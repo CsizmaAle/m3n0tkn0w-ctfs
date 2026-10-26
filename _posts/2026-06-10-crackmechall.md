@@ -1,7 +1,7 @@
 ---
 title: "UVT CTF – CrackmeChall"
 date: 2026-06-10 08:01:00 +0200
-categories: [CTF, UVT CTF]
+categories: [Platform, UVT CTF]
 tags: [reverse-engineering, crackme, xor, nibble-swap, bit-rotation, rol/ror, ghidra, memcmp]
 ---
 

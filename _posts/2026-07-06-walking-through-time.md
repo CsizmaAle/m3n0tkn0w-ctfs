@@ -1,7 +1,7 @@
 ---
 title: "UVT CTF – Walking through time..."
 date: 2026-07-06 08:00:00 +0200
-categories: [CTF, UVT CTF]
+categories: [Platform, UVT CTF]
 tags: [multi-layer, base64, rot13, hex, caesar, vigenère, cyberchef, dcode, matryoshka]
 ---
 

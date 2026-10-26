@@ -1,7 +1,7 @@
 ---
 title: "UVT CTF – Intro to pwntools"
 date: 2026-03-03 08:00:00 +0200
-categories: [CTF, UVT CTF]
+categories: [Platform, UVT CTF]
 tags: [pwntools, scripting, automation, regex, math-challenge, remote-server, speed-challenge]
 ---
 

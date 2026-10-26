@@ -1,7 +1,7 @@
 ---
 title: "RSTCON 2026 – Hey Listen"
 date: 2026-10-25 08:10:00 +0200
-categories: [CTF, RSTCON 2026]
+categories: [Events, RSTCON 2026]
 tags: [osint, social-media, linkedin, hidden-message, first-letters]
 media_subpath: /assets/img/posts/
 ---

@@ -1,7 +1,7 @@
 ---
 title: "RSTCON 2026 – Gauge Height"
 date: 2026-10-25 08:09:00 +0200
-categories: [CTF, RSTCON 2026]
+categories: [Events, RSTCON 2026]
 tags: [osint, geolocation, usgs, scada, csv, google-maps]
 media_subpath: /assets/img/posts/
 ---

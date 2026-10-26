@@ -1,7 +1,7 @@
 ---
 title: "UVT CTF – Airlock Dry Cleaning"
 date: 2026-07-06 08:02:00 +0200
-categories: [CTF, UVT CTF]
+categories: [Platform, UVT CTF]
 tags: [forensics, disk-image, file-recovery, deleted-files, sleuth-kit, tsk_recover]
 ---
 

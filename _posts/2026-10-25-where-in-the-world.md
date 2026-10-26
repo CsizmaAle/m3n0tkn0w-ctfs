@@ -1,7 +1,7 @@
 ---
 title: "RSTCON 2026 – Where in the World"
 date: 2026-10-25 08:11:00 +0200
-categories: [CTF, RSTCON 2026]
+categories: [Events, RSTCON 2026]
 tags: [osint, geolocation, exif, metadata, exiftool, gps]
 media_subpath: /assets/img/posts/
 ---

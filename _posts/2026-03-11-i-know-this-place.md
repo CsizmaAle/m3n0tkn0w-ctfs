@@ -1,7 +1,7 @@
 ---
 title: "UVT CTF – I Know This Place!"
 date: 2026-03-11 08:01:00 +0200
-categories: [CTF, UVT CTF]
+categories: [Platform, UVT CTF]
 tags: [steganography, corrupted-header, hex-editing, exif, osint, image-repair]
 media_subpath: /assets/img/posts/
 ---

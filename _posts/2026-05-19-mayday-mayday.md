@@ -1,7 +1,7 @@
 ---
 title: "UVT CTF – Mayday Mayday!"
 date: 2026-05-19 08:00:00 +0200
-categories: [CTF, UVT CTF]
+categories: [Platform, UVT CTF]
 tags: [disk-image, file-recovery, steganography, lsb, sleuth-kit, zsteg]
 ---
 

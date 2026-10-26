@@ -1,7 +1,7 @@
 ---
 title: "UVT CTF – Infinite ZIP"
 date: 2026-05-18 08:00:00 +0200
-categories: [CTF, UVT CTF]
+categories: [Platform, UVT CTF]
 tags: [nested-archives, automation, outlier-detection, base64]
 ---
 

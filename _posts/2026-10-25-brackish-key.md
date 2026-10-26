@@ -1,7 +1,7 @@
 ---
 title: "RSTCON 2026 – Brackish Key"
 date: 2026-10-25 08:00:00 +0200
-categories: [CTF, RSTCON 2026]
+categories: [Events, RSTCON 2026]
 tags: [xor, repeating-key-xor, known-plaintext, crib, hex, python]
 ---
 

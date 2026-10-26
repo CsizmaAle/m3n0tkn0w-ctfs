@@ -1,7 +1,7 @@
 ---
 title: "UVT CTF – The Rigged Roulette"
 date: 2026-03-23 08:00:00 +0200
-categories: [CTF, UVT CTF]
+categories: [Platform, UVT CTF]
 tags: [lcg, linear-congruential-generator, prng, modular-arithmetic, modular-inverse, pwntools, known-plaintext, crypto-math]
 media_subpath: /assets/img/posts/
 ---

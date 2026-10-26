@@ -1,7 +1,7 @@
 ---
 title: "UVT CTF – meme.social"
 date: 2026-05-09 08:02:00 +0200
-categories: [CTF, UVT CTF]
+categories: [Platform, UVT CTF]
 tags: [web, xss, stored-xss, cookie-stealing, ssti, jinja2, session-hijacking, webhook, filter-bypass, string-concatenation]
 ---
 

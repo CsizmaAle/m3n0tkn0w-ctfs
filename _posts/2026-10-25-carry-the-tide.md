@@ -1,7 +1,7 @@
 ---
 title: "RSTCON 2026 – Carry The Tide"
 date: 2026-10-25 08:04:00 +0200
-categories: [CTF, RSTCON 2026]
+categories: [Events, RSTCON 2026]
 tags: [reverse-engineering, crackme, ghidra, chained-check, hardcoded-target, python]
 ---
 

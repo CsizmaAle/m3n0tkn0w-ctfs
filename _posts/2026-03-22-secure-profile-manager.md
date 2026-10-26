@@ -1,7 +1,7 @@
 ---
 title: "UVT CTF – Secure Profile Manager"
 date: 2026-03-22 08:00:00 +0200
-categories: [CTF, UVT CTF]
+categories: [Platform, UVT CTF]
 tags: [aes, ecb, block-cipher, cut-and-paste-attack, pkcs7-padding, profile-manipulation, netcat]
 media_subpath: /assets/img/posts/
 ---

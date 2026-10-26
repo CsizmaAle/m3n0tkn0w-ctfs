@@ -1,7 +1,7 @@
 ---
 title: "RSTCON 2026 – Ladder Logic"
 date: 2026-10-25 08:05:00 +0200
-categories: [CTF, RSTCON 2026]
+categories: [Events, RSTCON 2026]
 tags: [reverse-engineering, plc, structured-text, iec-61131-3, xor, hardcoded-key, python]
 ---
 

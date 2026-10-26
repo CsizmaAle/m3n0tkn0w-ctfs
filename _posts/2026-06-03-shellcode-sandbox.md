@@ -1,7 +1,7 @@
 ---
 title: "UVT CTF – Shellcode sandbox"
 date: 2026-06-03 08:01:00 +0200
-categories: [CTF, UVT CTF]
+categories: [Platform, UVT CTF]
 tags: [pwn, binary-exploitation, buffer-overflow, shellcode, stack-executable, no-pie, ghidra, pwntools, ret2shellcode, checksec, reverse-engineering]
 media_subpath: /assets/img/posts/
 ---

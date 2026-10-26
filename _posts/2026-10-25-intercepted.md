@@ -1,7 +1,7 @@
 ---
 title: "RSTCON 2026 – Intercepted"
 date: 2026-10-25 08:02:00 +0200
-categories: [CTF, RSTCON 2026]
+categories: [Events, RSTCON 2026]
 tags: [encoding, multi-layer, hex, base64, base32, reverse, cyberchef]
 media_subpath: /assets/img/posts/
 ---

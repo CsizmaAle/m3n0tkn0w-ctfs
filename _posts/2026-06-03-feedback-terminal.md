@@ -1,7 +1,7 @@
 ---
 title: "UVT CTF – Feedback terminal"
 date: 2026-06-03 08:00:00 +0200
-categories: [CTF, UVT CTF]
+categories: [Platform, UVT CTF]
 tags: [pwn, binary-exploitation, buffer-overflow, ret2win, canary-bypass, ghidra, pwntools, checksec, no-pie, stack-smashing]
 ---
 

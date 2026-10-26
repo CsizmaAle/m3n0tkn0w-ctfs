@@ -1,7 +1,7 @@
 ---
 title: "UVT CTF – Binwalking through an Onion"
 date: 2026-03-07 08:00:00 +0200
-categories: [CTF, UVT CTF]
+categories: [Platform, UVT CTF]
 tags: [binwalk, hidden-files, archive, embedded-data, rot13, caesar-cipher, hexed.it, 7z, file-carving]
 media_subpath: /assets/img/posts/
 ---

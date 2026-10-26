@@ -1,7 +1,7 @@
 ---
 title: "UVT CTF – Scary Sound Files"
 date: 2026-07-06 08:03:00 +0200
-categories: [CTF, UVT CTF]
+categories: [Platform, UVT CTF]
 tags: [steganography, audio, spectrogram, audacity, md5, hashing, wav]
 media_subpath: /assets/img/posts/
 ---

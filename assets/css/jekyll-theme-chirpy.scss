@@ -1,0 +1,53 @@
+---
+---
+
+@use 'abstracts/variables' with (
+  $theme: '{{ site.theme_mode }}'
+);
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* ----------------------------------------------------------------------
+   Custom violet accent (overrides theme CSS variables for light & dark)
+   ---------------------------------------------------------------------- */
+
+@mixin violet-light {
+  --link-color: #7c3aed;
+  --sidebar-active-color: #7c3aed;
+  --sidebar-hover-bg: rgb(124 58 237 / 10%);
+  --btn-share-hover-color: #7c3aed;
+  --tag-hover: rgb(124 58 237 / 15%);
+  --categories-hover-bg: rgb(124 58 237 / 12%);
+  --checkbox-checked-color: #7c3aed;
+}
+
+@mixin violet-dark {
+  --link-color: #a78bfa;
+  --sidebar-active-color: #c4b5fd;
+  --sidebar-hover-bg: rgb(124 58 237 / 22%);
+  --btn-share-hover-color: #a78bfa;
+  --tag-hover: rgb(124 58 237 / 28%);
+  --categories-hover-bg: rgb(124 58 237 / 24%);
+  --checkbox-checked-color: #a78bfa;
+}
+
+:root[data-mode='light'] {
+  @include violet-light;
+}
+
+:root[data-mode='dark'] {
+  @include violet-dark;
+}
+
+:root:not([data-mode]) {
+  @include violet-light;
+
+  @media (prefers-color-scheme: dark) {
+    @include violet-dark;
+  }
+}

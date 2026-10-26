@@ -1,7 +1,7 @@
 ---
 title: "UVT CTF – The Cryptographic Timeline"
 date: 2026-03-20 08:01:00 +0200
-categories: [CTF, UVT CTF]
+categories: [Platform, UVT CTF]
 tags: [caesar-cipher, rot, vigenere, base64, xor, aes-ecb, multi-layer-encryption, cyberchef, dcode]
 media_subpath: /assets/img/posts/
 ---

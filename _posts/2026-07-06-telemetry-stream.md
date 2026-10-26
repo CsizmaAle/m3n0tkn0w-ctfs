@@ -1,7 +1,7 @@
 ---
 title: "UVT CTF – Telemetry stream"
 date: 2026-07-06 08:01:00 +0200
-categories: [CTF, UVT CTF]
+categories: [Platform, UVT CTF]
 tags: [reverse-engineering, rc4, stream-cipher, base64, strings, cyberchef, ksa-bug, red-herring]
 media_subpath: /assets/img/posts/
 ---

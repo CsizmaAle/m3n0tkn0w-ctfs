@@ -1,7 +1,7 @@
 ---
 title: "UVT CTF – VestByte Inject"
 date: 2026-05-09 08:00:00 +0200
-categories: [CTF, UVT CTF]
+categories: [Platform, UVT CTF]
 tags: [web, command-injection, os-injection, shell-injection, grep, bash, metacharacters, shell-true]
 media_subpath: /assets/img/posts/
 ---

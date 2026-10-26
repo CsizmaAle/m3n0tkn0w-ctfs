@@ -1,7 +1,7 @@
 ---
 title: "UVT CTF – Bitflip Token"
 date: 2026-06-10 08:00:00 +0200
-categories: [CTF, UVT CTF]
+categories: [Platform, UVT CTF]
 tags: [stream-cipher, bit-flipping, malleability, known-plaintext, xor-keystream, token-forgery, pwntools]
 ---
 

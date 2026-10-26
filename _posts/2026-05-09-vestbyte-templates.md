@@ -1,7 +1,7 @@
 ---
 title: "UVT CTF – VestByte Templates"
 date: 2026-05-09 08:01:00 +0200
-categories: [CTF, UVT CTF]
+categories: [Platform, UVT CTF]
 tags: [web, ssti, jinja2, template-injection, environment-variables, code-execution]
 ---
 

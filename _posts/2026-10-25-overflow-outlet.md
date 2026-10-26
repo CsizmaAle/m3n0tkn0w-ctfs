@@ -1,7 +1,7 @@
 ---
 title: "RSTCON 2026 – Overflow Outlet"
 date: 2026-10-25 08:06:00 +0200
-categories: [CTF, RSTCON 2026]
+categories: [Events, RSTCON 2026]
 tags: [binary-exploitation, buffer-overflow, stack-overwrite, local-variable, pwntools, ghidra, aarch64]
 ---
 

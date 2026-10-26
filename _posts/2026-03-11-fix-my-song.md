@@ -1,7 +1,7 @@
 ---
 title: "UVT CTF – Fix my song!"
 date: 2026-03-11 08:00:00 +0200
-categories: [CTF, UVT CTF]
+categories: [Platform, UVT CTF]
 tags: [steganography, audio, spectrogram, audacity, hidden-message]
 media_subpath: /assets/img/posts/
 ---

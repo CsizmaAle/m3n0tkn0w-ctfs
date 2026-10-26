@@ -1,7 +1,7 @@
 ---
 title: "UVT CTF – Are you PYlingual?"
 date: 2025-06-03 08:00:00 +0200
-categories: [CTF, UVT CTF]
+categories: [Platform, UVT CTF]
 tags: [reverse-engineering, pyinstaller, python-bytecode, dll-analysis, pipeline-inversion, lcg]
 ---
 
