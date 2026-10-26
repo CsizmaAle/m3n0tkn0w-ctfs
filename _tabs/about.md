@@ -5,5 +5,5 @@ This site is where I publish write-ups for challenges I've solved
 (only after events have ended) and keep track of my progress.
 
 ## Find me
-- CTFtime: [n3wHack3r5](https://ctftime.org/team/452649
+- CTFtime: [n3wHack3r5](https://ctftime.org/team/452649)
 - GitHub: [CsizmaAle](https://github.com/CsizmaAle)
