@@ -1,6 +1,6 @@
 ---
 icon: fas fa-info-circle
-order: 4
+order: 1
 ---
 
 Hi, I'm **M3n0tkn0w** 👋

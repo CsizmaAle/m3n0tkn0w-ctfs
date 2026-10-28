@@ -1,6 +1,6 @@
 ---
 icon: fas fa-flag
-order: 3
+order: 2
 ---
 
 A log of the CTF competitions I've participated in.
