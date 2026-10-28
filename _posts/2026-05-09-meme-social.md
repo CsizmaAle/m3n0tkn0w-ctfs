@@ -3,6 +3,7 @@ title: "UVT CTF – meme.social"
 date: 2026-05-09 08:02:00 +0200
 categories: [Platform, UVT CTF]
 tags: [web, xss, stored-xss, cookie-stealing, ssti, jinja2, session-hijacking, webhook, filter-bypass, string-concatenation]
+excerpt: "Stored XSS on a meme board steals the admin's cookie through a webhook, then SSTI in the admin panel reads the flag."
 ---
 
 {% raw %}

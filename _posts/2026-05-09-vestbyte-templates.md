@@ -3,6 +3,7 @@ title: "UVT CTF – VestByte Templates"
 date: 2026-05-09 08:01:00 +0200
 categories: [Platform, UVT CTF]
 tags: [web, ssti, jinja2, template-injection, environment-variables, code-execution]
+excerpt: "Jinja2 SSTI in a badge generator — leak the flag from the environment variables or jump straight to code execution."
 ---
 
 {% raw %}

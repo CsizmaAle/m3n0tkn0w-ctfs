@@ -4,8 +4,10 @@ date: 2026-10-25 12:15:00 +0200
 categories: [Events, RSTCON 2026]
 tags: [web, ssti, jinja2, template-injection, rce, lipsum, os-popen]
 media_subpath: /assets/img/posts/
+excerpt: "Server-side template injection in a tide-report greeter — confirm the template eval, then read the flag through os.popen."
 ---
 
+{% raw %}
 ## **Challenge Information**
 **Title:**  Template Tide  
 **Category**:  web exploitation  
@@ -60,3 +62,4 @@ Final Exploit / Command Used:
 
 ## **References**
 - PayloadsAllTheThings — SSTI (https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Server%20Side%20Template%20Injection)
+{% endraw %}
