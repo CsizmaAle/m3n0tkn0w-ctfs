@@ -1,0 +1,37 @@
+---
+layout: page
+# Archives grouped by the date each challenge was solved (front matter `solved`), not the posting date.
+---
+
+{% include lang.html %}
+
+{% assign df_strftime_m = site.data.locales[lang].df.archives.strftime | default: '/ %m' %}
+{% assign df_dayjs_m = site.data.locales[lang].df.archives.dayjs | default: '/ MM' %}
+{% assign posts = site.posts | sort: 'solved', 'first' | reverse %}
+
+<div id="archives" class="pl-xl-3">
+  {% for post in posts %}
+    {% assign when = post.solved | default: post.date %}
+    {% assign cur_year = when | date: '%Y' %}
+
+    {% if cur_year != last_year %}
+      {% unless forloop.first %}</ul>{% endunless %}
+
+      <time class="year lead d-block">{{ cur_year }}</time>
+      {{ '<ul class="list-unstyled">' }}
+
+      {% assign last_year = cur_year %}
+    {% endif %}
+
+    <li>
+      {% assign ts = when | date: '%s' %}
+      <span class="date day" data-ts="{{ ts }}" data-df="DD">{{ when | date: '%d' }}</span>
+      <span class="date month small text-muted ms-1" data-ts="{{ ts }}" data-df="{{ df_dayjs_m }}">
+        {{ when | date: df_strftime_m }}
+      </span>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </li>
+
+    {% if forloop.last %}</ul>{% endif %}
+  {% endfor %}
+</div>
